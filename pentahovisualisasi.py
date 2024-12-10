@@ -13,7 +13,6 @@ def load_data(file):
         st.error("File harus berformat .csv atau .xlsx")
         return None
 # Streamlit interface
-st.title("Peta Lokasi Potensi")
 st.write("""
     Aplikasi ini menampilkan peta interaktif dengan lokasi yang dikategorikan berdasarkan potensi.
     Setiap lokasi ditandai dengan warna marker yang berbeda sesuai dengan kategorinya.
