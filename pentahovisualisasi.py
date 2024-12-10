@@ -13,10 +13,7 @@ def load_data(file):
         st.error("File harus berformat .csv atau .xlsx")
         return None
 # Streamlit interface
-st.write("""
-    Aplikasi ini menampilkan peta interaktif dengan lokasi yang dikategorikan berdasarkan potensi.
-    Setiap lokasi ditandai dengan warna marker yang berbeda sesuai dengan kategorinya.
-""")
+
 # Default data
 data = {
     'Lokasi': [
@@ -48,7 +45,10 @@ df = pd.DataFrame(data)
 
 # Streamlit interface
 st.title("Peta Lokasi Potensi")
-
+st.write("""
+    Aplikasi ini menampilkan peta interaktif dengan lokasi yang dikategorikan berdasarkan potensi.
+    Setiap lokasi ditandai dengan warna marker yang berbeda sesuai dengan kategorinya.
+""")
 # Upload file
 uploaded_file = st.file_uploader("Unggah file data (Excel/CSV)", type=["csv", "xlsx"])
 
